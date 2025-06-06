@@ -38,18 +38,18 @@ async function comboScraper(ctx: ShowScrapeContext | MovieScrapeContext): Promis
       embedId: 'oneserver-goku',
       url: JSON.stringify(query),
     },
-    // {
-    //   embedId: 'oneserver-hianime',
-    //   url: JSON.stringify(query),
-    // },
-    // {
-    //   embedId: 'oneserver-animepahe',
-    //   url: JSON.stringify(query),
-    // },
-    // {
-    //   embedId: 'oneserver-anizone',
-    //   url: JSON.stringify(query),
-    // },
+    {
+      embedId: 'oneserver-hianime',
+      url: JSON.stringify(query),
+    },
+    {
+      embedId: 'oneserver-animepahe',
+      url: JSON.stringify(query),
+    },
+    {
+      embedId: 'oneserver-anizone',
+      url: JSON.stringify(query),
+    },
   ];
 
   return { embeds };

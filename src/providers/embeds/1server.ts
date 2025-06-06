@@ -224,11 +224,11 @@ function processApiResponse(response: any, ctx: any): EmbedOutput {
 /* MOVIE & TV PROVIDERS */
 const movieTvProviders = [
   { id: 'autoembed', name: 'Autoembed', rank: 165 },
-  { id: 'vidsrcsu', name: 'vidsrc.su', rank: 164, disabled: true },
-  { id: 'primebox', name: 'Primebox', rank: 162, disabled: true },
-  { id: 'foxstream', name: 'Foxstream', rank: 161, disabled: true },
+  { id: 'vidsrcsu', name: 'vidsrc.su', rank: 164 },
+  { id: 'primebox', name: 'Primebox', rank: 162 },
+  { id: 'foxstream', name: 'Foxstream', rank: 161 },
   { id: 'flixhq', name: 'FlixHQ', rank: 166 },
-  { id: 'goku', name: 'Goku', rank: 163, disabled: true },
+  { id: 'goku', name: 'Goku', rank: 163 },
 ];
 
 const createMovieTvEmbed = (provider: { id: string; name: string; rank: number; disabled?: boolean }) =>
