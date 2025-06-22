@@ -68,6 +68,20 @@ import { streamboxScraper } from './sources/streambox';
 import { vidapiClickScraper } from './sources/vidapiclick';
 import { warezcdnScraper } from './sources/warezcdn';
 import { wecimaScraper } from './sources/wecima';
+import { xprimeScraper } from './sources/xprimetv';
+import {
+  xprimeApolloEmbed,
+  xprimeFendiEmbed,
+  xprimeFoxEmbed,
+  xprimeHarbourEmbed,
+  xprimeKrakenEmbed,
+  xprimeMarantEmbed,
+  xprimePhoenixEmbed,
+  xprimePrimenetEmbed,
+  xprimeRageEmbed,
+  xprimeStreamboxEmbed,
+  xprimeVolkswagenEmbed,
+} from './sources/xprimetv/xprimetv';
 
 export function gatherAllSources(): Array<Sourcerer> {
   // all sources are gathered here
@@ -97,6 +111,7 @@ export function gatherAllSources(): Array<Sourcerer> {
     wecimaScraper,
     animeflvScraper,
     cinemaosScraper,
+    xprimeScraper,
   ];
 }
 
@@ -120,6 +135,17 @@ export function gatherAllEmbeds(): Array<Embed> {
     autoembedTamilScraper,
     autoembedTeluguScraper,
     turbovidScraper,
+    xprimeFoxEmbed,
+    xprimeApolloEmbed,
+    xprimeStreamboxEmbed,
+    xprimeMarantEmbed,
+    xprimeFendiEmbed,
+    xprimePrimenetEmbed,
+    xprimeVolkswagenEmbed,
+    xprimeHarbourEmbed,
+    xprimePhoenixEmbed,
+    xprimeRageEmbed,
+    xprimeKrakenEmbed,
     mp4hydraServer1Scraper,
     mp4hydraServer2Scraper,
     VidsrcsuServer1Scraper,

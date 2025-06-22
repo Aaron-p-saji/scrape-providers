@@ -11,6 +11,19 @@ import { warezcdnembedMp4Scraper } from '@/providers/embeds/warezcdn/mp4';
 import { embedsuScraper } from '@/providers/sources/embedsu';
 import { soaperTvScraper } from '@/providers/sources/soapertv';
 import { wecimaScraper } from '@/providers/sources/wecima';
+import {
+  xprimeApolloEmbed,
+  xprimeFendiEmbed,
+  xprimeFoxEmbed,
+  xprimeHarbourEmbed,
+  xprimeKrakenEmbed,
+  xprimeMarantEmbed,
+  xprimePhoenixEmbed,
+  xprimePrimenetEmbed,
+  xprimeRageEmbed,
+  xprimeStreamboxEmbed,
+  xprimeVolkswagenEmbed,
+} from '@/providers/sources/xprimetv/xprimetv';
 import { Stream } from '@/providers/streams';
 import { IndividualEmbedRunnerOptions } from '@/runners/individualRunner';
 import { ProviderRunnerOptions } from '@/runners/runner';
@@ -28,6 +41,17 @@ const SKIP_VALIDATION_CHECK_IDS = [
   streamwishEnglishScraper.id,
   embedsuScraper.id,
   wecimaScraper.id,
+  xprimeFoxEmbed.id,
+  xprimeApolloEmbed.id,
+  xprimeStreamboxEmbed.id,
+  xprimeMarantEmbed.id,
+  xprimeFendiEmbed.id,
+  xprimePrimenetEmbed.id,
+  xprimeVolkswagenEmbed.id,
+  xprimeHarbourEmbed.id,
+  xprimePhoenixEmbed.id,
+  xprimeRageEmbed.id,
+  xprimeKrakenEmbed.id,
   ...cinemaosHexaEmbeds.map((e) => e.id),
   soaperTvScraper.id,
 ];
